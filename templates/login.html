@@ -1,0 +1,178 @@
+<html lang="en">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Login</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link href="{{ url_for('static', filename='libs/loginindex.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage/css/style.css') }}">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div class="site-wrap" id="home-section">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <!-- <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-6 col-md-3 col-xl-4  d-block">
+                        <h1 class="mb-0 site-logo">
+                            <a href="/dashboard">
+                                <b class="logo-icon">
+                                    <img src="{{ url_for('static', filename='images/favicon.png') }}" alt="homepage" class="dark-logo" />
+                                </b>
+                                <span class="logo-text" style="display: inline-block;">
+                                    <img src="{{ url_for('static', filename='images/logotext.png') }}" alt="homepage" class="text-logo" />
+                                </span>
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-12 col-md-9 col-xl-8 main-menu">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+
+                </div>
+            </div>
+
+        </header> -->
+
+        <br>
+        <div class="col-md-12" style="position: relative;" data-aos="fade-up" data-aos-delay="200" id="#login-section">
+
+            <div class="container" style="width: 100%; margin-top: 200px">
+                <div class="justify-content-center align-items-center">
+                    <div class="card p-4" style="max-width: 500px;">
+                        <form id="loginfrm">
+                            <h3 class="page-title text-truncate text-dark font-weight-medium text-center pb-4">Login
+                                Account</h3>
+
+
+
+                            <div class="row align-items-center mt-2">
+                                <div class="col-md-4">
+                                    <h5 class="mb-0 text-center">Email<span class="rqd">*</span></h5>
+                                </div>
+                                <div class="col-md-8">
+                                    <input name="email" type="email" class="form-control"
+                                        placeholder="Enter email address" value="ep924test+@gmail.com" required />
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mt-2">
+                                <div class="col-md-4">
+                                    <h5 class="mb-0 text-center">Password<span class="rqd">*</span></h5>
+                                </div>
+                                <div class="col-md-8">
+                                    <input name="pass" type="password" class="form-control" placeholder="Enter Password"
+                                        value="amaba" required />
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <button type="button" id="submitL" class="float-right btn btn-primary"
+                                        class="btn btn-primary">Login</button>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-12 align-self-center">
+                
+            </div>
+        </div> -->
+
+        <div class="footer text-center" style="background-color: white; position: fixed; bottom: 0; width: 100%;">
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col-12">
+                        <p class="mb-0 text-left" style="display: inline;">
+                            <!-- Powered by: <a href="https://www.facebook.com/ICTResearchCongress" target="_blank">Isko Monitoring</a> -->
+                            Powered by: <a href="#" target="_blank">4AM</a>
+                        </p>
+                        <!-- <p class="mb-0" style="display: inline;">
+
+                            <a href="#" target="_blank" class="p-3"><span class="icon-facebook"></span></a>
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="{{ url_for('static', filename='homepage/js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/jquery-ui.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/jquery.countdown.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/jquery.fancybox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/jquery.sticky.js') }}"></script>
+<script src="{{ url_for('static', filename='homepage/js/main.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/pages/jquery-toast-plugin-master/src/jquery.toast.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/global.js') }}"></script>
+
+<!-- Jquery Toast -->
+<link href="{{ url_for('static', filename='js/pages/jquery-toast-plugin-master/src/jquery.toast.css') }}"
+    rel="stylesheet" />
+<!-- sweetalert -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<!--Custom JS* -->
+<script src="{{ url_for('static', filename='js/customJS.js') }}"></script>
+
+<script src="{{ url_for('static', filename='scripts/login.js') }}"></script>
+
+</html>

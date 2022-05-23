@@ -1,0 +1,23 @@
+{
+  "name": "thesis_ams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-plugin-django": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristianamaba/Thesis---AMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristianamaba/Thesis---AMS/issues"
+  },
+  "homepage": "https://github.com/kristianamaba/Thesis---AMS#readme"
+}
